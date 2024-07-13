@@ -1,7 +1,15 @@
-import Image from "next/image";
-
-//NotoSans, NotoSansKR 폰트 사용
+import Calculator from "@/components/Calculator";
+import MoneyList from "@/components/MoneyList";
 
 export default function Home() {
-  return <div className="">개쩌는 계산기</div>;
+  return (
+    <div className="w-full h-[90vh] flex justify-between items-center">
+      <div className="w-[45%] flex justify-center">
+        <Calculator />
+      </div>
+      <div className="w-[45%] flex justify-center">
+        <MoneyList />
+      </div>
+    </div>
+  );
 }
