@@ -93,7 +93,7 @@ export default function Calculator() {
   };
 
   return (
-    <div className="w-[25rem] h-full bg-gradient-custom border border-white/30 rounded-lg p-8 shadow-lg">
+    <div className="w-[25rem] h-full bg-[#4264e3] border border-white/30 rounded-lg p-8 shadow-lg">
       <section className="bg-white/75 border border-white/10 rounded-lg p-5 mb-4 text-right text-2xl shadow-lg">
         {display}
       </section>
@@ -101,19 +101,19 @@ export default function Calculator() {
       <section className="space-y-4">
         <div className="flex justify-between">
           <button
-            className="w-2/5 py-4 text-xl bg-white/75 border border-white/10 rounded-lg shadow-md backdrop-blur-lg"
+            className="w-2/5 py-4 text-xl bg-white/90 border border-white/10 rounded-lg shadow-md backdrop-blur-lg"
             onClick={() => handleOperator("C")}
           >
             C
           </button>
           <button
-            className="w-1/5 py-4 text-xl bg-white/75 border border-white/10 rounded-lg shadow-md backdrop-blur-lg"
+            className="w-1/5 py-4 text-xl bg-white/90 border border-white/10 rounded-lg shadow-md backdrop-blur-lg"
             onClick={() => handleOperator("←")}
           >
             &larr;
           </button>
           <button
-            className="w-1/5 py-4 text-xl bg-white/75 border border-white/10 rounded-lg shadow-md backdrop-blur-lg"
+            className="w-1/5 py-4 text-xl text-white bg-[#2e2f31] border border-white/10 rounded-lg shadow-md backdrop-blur-lg"
             onClick={() => handleOperator("÷")}
           >
             &divide;
@@ -139,7 +139,7 @@ export default function Calculator() {
             9
           </button>
           <button
-            className="w-1/5 py-4 text-xl bg-white/75 border border-white/10 rounded-lg shadow-md backdrop-blur-lg"
+            className="w-1/5 py-4 text-xl bg-[#F94C66] border border-white/10 rounded-lg shadow-md backdrop-blur-lg"
             onClick={() => handleOperator("×")}
           >
             &times;
@@ -165,7 +165,7 @@ export default function Calculator() {
             6
           </button>
           <button
-            className="w-1/5 py-4 text-xl bg-white/75 border border-white/10 rounded-lg shadow-md backdrop-blur-lg"
+            className="w-1/5 py-4 text-xl bg-[#FFE400] border border-white/10 rounded-lg shadow-md backdrop-blur-lg"
             onClick={() => handleOperator("-")}
           >
             -
@@ -191,7 +191,7 @@ export default function Calculator() {
             3
           </button>
           <button
-            className="w-1/5 py-4 text-xl bg-white/75 border border-white/10 rounded-lg shadow-md backdrop-blur-lg"
+            className="w-1/5 py-4 text-xl bg-[#4bac2a] border border-white/10 rounded-lg shadow-md backdrop-blur-lg"
             onClick={() => handleOperator("+")}
           >
             +

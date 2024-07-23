@@ -15,11 +15,24 @@ export default function Header() {
   const closeLoginModal = () => setIsLoginModalOpen(false);
 
   return (
-    <div className="w-full h-[10vh] flex justify-between items-center border-b-2 border-[#FF395B]">
+    <div className="w-full h-[10vh] flex justify-between items-center border-b-2 border-[#00C897]">
       <div className="ml-[3rem]">
         <Link href="/">
           <Logo />
         </Link>
+      </div>
+      <div className="mr-[3rem]">
+        <ul className="flex font-bold">
+          <li className="mr-6 hover:text-[#00C897] cursor-pointer">
+            <Link href="/">환율계산기</Link>
+          </li>
+          <li className="mr-6 hover:text-[#00C897] cursor-pointer">
+            <Link href="/BMI">BMI계산기</Link>
+          </li>
+          <li className="hover:text-[#00C897] cursor-pointer">
+            피파수수료계산기
+          </li>
+        </ul>
       </div>
     </div>
   );

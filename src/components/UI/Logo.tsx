@@ -1,11 +1,11 @@
 import React from "react";
-import { PiNuclearPlant } from "react-icons/pi";
+import { AiOutlineCalculator } from "react-icons/ai";
 
 export default function Logo() {
   return (
-    <div className="flex items-center text-[#FF395B] text-[1.5rem]">
-      <PiNuclearPlant />
-      <p className="font-bold">AntBnB</p>
+    <div className="flex items-center text-[#00C897] text-[1.5rem]">
+      <AiOutlineCalculator />
+      <p className="font-bold text-black">Various Calculators</p>
     </div>
   );
 }
