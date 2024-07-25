@@ -88,8 +88,8 @@ const FeeCalculator = () => {
   };
 
   return (
-    <div className="container mx-auto mt-4">
-      <div className="flex justify-between mb-4">
+    <div className="container mx-auto mt-4 flex flex-col justify-center items-center">
+      <div className="w-[85%] flex justify-between mb-4">
         <h1 className="text-2xl font-bold mb-4">
           <span className="text-[#227a51]">FCONLINE </span>수수료 계산기
         </h1>
