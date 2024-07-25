@@ -5,14 +5,14 @@ import Logo from "./Logo";
 import Link from "next/link";
 
 export default function Header() {
-  const [isJoinModalOpen, setIsJoinModalOpen] = useState(false);
-  const [isLoginModalOpen, setIsLoginModalOpen] = useState(false);
+  // const [isJoinModalOpen, setIsJoinModalOpen] = useState(false);
+  // const [isLoginModalOpen, setIsLoginModalOpen] = useState(false);
 
-  const openJoinModal = () => setIsJoinModalOpen(true);
-  const closeJoinModal = () => setIsJoinModalOpen(false);
+  // const openJoinModal = () => setIsJoinModalOpen(true);
+  // const closeJoinModal = () => setIsJoinModalOpen(false);
 
-  const openLoginModal = () => setIsLoginModalOpen(true);
-  const closeLoginModal = () => setIsLoginModalOpen(false);
+  // const openLoginModal = () => setIsLoginModalOpen(true);
+  // const closeLoginModal = () => setIsLoginModalOpen(false);
 
   return (
     <div className="w-full h-[10vh] flex justify-between items-center border-b-2 border-[#00C897]">
@@ -30,7 +30,7 @@ export default function Header() {
             <Link href="/BMI">BMI계산기</Link>
           </li>
           <li className="hover:text-[#00C897] cursor-pointer">
-            피파수수료계산기
+            <Link href="/FCfee">피파수수료 계산기</Link>
           </li>
         </ul>
       </div>

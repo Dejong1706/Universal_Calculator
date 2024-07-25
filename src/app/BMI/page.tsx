@@ -13,13 +13,25 @@ export default function Bmipage() {
   };
 
   return (
-    <div className="w-full h-[90vh] flex flex-col justify-center items-center">
-      <div className="w-full flex justify-evenly mb-8">
-        <BmiForm isBmiHandler={isBmiHandler} />
-        <BmiResult bmi={bmi} />
+    <div className="w-full h-[90vh]">
+      <div className="w-full h-[95%] flex flex-col justify-center items-center">
+        <div className="w-full flex justify-evenly mb-8">
+          <BmiForm isBmiHandler={isBmiHandler} />
+          <BmiResult bmi={bmi} />
+        </div>
+        <div className="w-full flex justify-center">
+          <BmiRangeBar />
+        </div>
       </div>
-      <div className="w-full flex justify-center">
-        <BmiRangeBar />
+      <div className="flex justify-end mr-8 text-gray-700">
+        <p>
+          <a
+            href="https://www.flaticon.com/kr/free-icons/"
+            title="궁금한 아이콘"
+          >
+            이미지 출처: Eucalyp - Flaticon
+          </a>
+        </p>
       </div>
     </div>
   );

@@ -2,7 +2,6 @@
 import { useState } from "react";
 
 export default function Calculator() {
-  const [total, setTotal] = useState<number>(0);
   const [display, setDisplay] = useState("0");
 
   const inputNum = (num: string) => {
@@ -52,7 +51,6 @@ export default function Calculator() {
 
   const reset = () => {
     setDisplay("0");
-    setTotal(0);
   };
 
   const result = () => {
@@ -88,7 +86,6 @@ export default function Calculator() {
       }
     }
 
-    setTotal(sum);
     setDisplay(String(sum));
   };
 
