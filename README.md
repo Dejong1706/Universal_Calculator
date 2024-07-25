@@ -3,7 +3,7 @@
 <img src="https://github.com/user-attachments/assets/96a562b2-2e4e-4c9b-94fc-c3b7c21fc9a0" width="400" height="400"/>
 
 
-- 배포 URL : ...
+- 배포 URL : https://universal-calculator-sepia.vercel.app/
 
 <br>
 
