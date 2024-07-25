@@ -1,5 +1,25 @@
 import { createSlice } from "@reduxjs/toolkit";
 
+type Sale = {
+  id: number;
+  amount: string;
+  headcount: string;
+  feePercentage: number;
+  fee: number;
+};
+
+type State = {
+  saleArray: Sale[];
+};
+
+type UpdateSaleAction = {
+  payload: {
+    id: number;
+    field: keyof Sale;
+    value: string | number;
+  };
+};
+
 const initialState = {
   saleArray: [{ id: 1, amount: "", headcount: "", feePercentage: 0, fee: 0 }],
   discountPCBang: false,
@@ -20,11 +40,11 @@ const salesSlice = createSlice({
         fee: 0,
       });
     },
-    updateSale(state, action) {
+    updateSale(state: State, action: UpdateSaleAction) {
       const { id, field, value } = action.payload;
       const sale = state.saleArray.find((sale) => sale.id === id);
       if (sale) {
-        sale[field] = value;
+        (sale[field] as string | number) = value;
       }
     },
     removeSalesInput(state, action) {
