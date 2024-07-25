@@ -1,6 +1,6 @@
-# 다용도 계산
+# 다용도 계산기
 
-<img src="https://github.com/Dejong1706/MyBlog/assets/75114974/f2bcbb54-915c-4d94-8170-1b47d31cbe88" width="400" height="400"/>
+<img src="https://github.com/user-attachments/assets/96a562b2-2e4e-4c9b-94fc-c3b7c21fc9a0" width="400" height="400"/>
 
 
 - 배포 URL : ...
